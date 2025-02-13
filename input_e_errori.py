@@ -28,3 +28,14 @@ except FileNotFoundError:
     print("Errore: file non trovato")
 except IndexError:
     print("Errore: Lista troppo corta")
+
+print("------------------")
+
+while True:
+    eta = input("Quanti anni hai? ")
+    try:
+        eta_int = int(eta)
+        print(f"Hai specificato {eta_int} anni")
+        break
+    except:
+        print ("Inserire un numero valido")
